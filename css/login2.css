@@ -1,4 +1,137 @@
-p {
-    margin-top: 1%;
-    margin-bottom: 1%;
+
+.sidenav {
+    height: 230px;
+    background-color: #000;
+    overflow-x: hidden;
+    padding-top: 20px;
+    text-align: center;
+}
+
+
+.main {
+    padding: 0px 10px;
+}
+.input-login{
+    /* background-color: #F2F2F2;*/
+     background-color: #FFFFFF;
+}
+
+@media only screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+}
+
+@media only screen and (max-width: 450px) {
+    .login-form{
+        margin-top: 2%;
+    }
+
+    .register-form{
+        margin-top: 2%;
+    }
+
+    .main{
+        margin-top: 5%;
+    }
+    
+    .sidenav{
+        height: 8%;
+        width: 100%;
+        z-index: 1;
+        top: 0;
+        left: 0;
+    }
+    
+}
+
+@media only screen and (min-width: 768px){
+    .main{
+        margin-top: 45%;
+        margin-left: 30%; 
+    }
+
+    .sidenav{
+        height: 100%;
+        width: 30%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+    }
+
+    .login-form{
+        margin-top: 80%;
+    }
+
+    .register-form{
+        margin-top: 20%;
+    }
+
+    .login-main-text{
+        margin-top:140%;
+        padding: 60px;
+        color: #fff;
+    }
+    
+    .login-main-text h2{
+        margin-top: 80%;
+        font-weight: 300;
+    }
+}
+
+
+@media only screen and (min-width: 1024px){
+
+    .main{
+        margin-top: 25%;
+        margin-left: 30%; 
+    }
+
+    .sidenav{
+        height: 100%;
+        width: 30%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+    }
+
+    .login-form{
+        margin-top: 40%;
+    }
+
+    .register-form{
+        margin-top: 20%;
+    }
+
+    .login-main-text{
+        margin-top:70%;
+        padding: 60px;
+        color: #fff;
+    }
+    
+    .login-main-text h2{
+        margin-top: 80%;
+        font-weight: 300;
+    }
+
+}
+
+
+
+
+.login-main-text{
+    padding-top: 15%;
+    padding: 15px;
+    color: #fff;
+}
+
+.login-main-text h2{
+    margin-top: 15%;
+    font-weight: 100;
+}
+
+.login-form{
+    margin-left: 20%;
+    margin-top: 45%;
+    
 }
