@@ -38,8 +38,6 @@
             <p><?php echo $New->description?></p>
           </div>
         </div>
-      <?php $controle_ativo=1;
-      }else{ ?>
         <div class="carousel-item">
           <img class="d-block w-100" src="<?php echo $New->urlToImage?>" alt="Second slide">
           <div class="carousel-caption d-none d-md-block">
