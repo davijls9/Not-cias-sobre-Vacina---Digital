@@ -104,51 +104,6 @@ body {
     background-color: 
 }
 
-@media(min-width:768px) {
-  #wrapper {
-    padding-left: 0;
-  }
-  #wrapper.toggled {
-    padding-right: 10px;
-  }
-  #sidebar-wrapper {
-    width: 0;
-  }
-  #wrapper.toggled #sidebar-wrapper {
-    width: 250px;
-  }
-  #page-content-wrapper {
-    padding: 20px;
-    position: relative;
-  }
-  #wrapper.toggled #page-content-wrapper {
-    position: relative;
-    margin-right: 0;
-  }
-}
-
-@media (min-width:1024px){
-  #wrapper {
-    padding-left: 0;
-  }
-  #wrapper.toggled {
-    padding-right: 20px;
-  }
-  #sidebar-wrapper {
-    width: 0;
-  }
-  #wrapper.toggled #sidebar-wrapper {
-    width: 350px;
-  }
-  #page-content-wrapper {
-    padding: 30px;
-    position: relative;
-  }
-  #wrapper.toggled #page-content-wrapper {
-    position: relative;
-    margin-right: 0;
-  }
-}
 
 
 img{

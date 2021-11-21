@@ -15,6 +15,7 @@
 
    <link rel="stylesheet" href="css/login2.css">
    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+   <script src="http://crypto-js.googlecode.com/svn/tags/3.0.2/build/rollups/md5.js"></script>
 
    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
@@ -33,31 +34,21 @@
       <div class="col-md-7 col-sm-12">
          <div class="login-form">
 
-            <form method="post" action="validaLogin.php" id="form_login">
+            <form id="form_login">
                <div class="form-group">
                   <label>Email</label>
-                  <input type="text" class="form-control input-login" placeholder="login" name="login">
+                  <input type="text" class="form-control input-login" placeholder="login" id="email" name="login">
                </div>
                <div class="form-group">
                   <label>Senha</label>
-                  <input type="password" class="form-control input-login" placeholder="senha" name="senha">
+                  <input type="password" class="form-control input-login" placeholder="senha" id="senha" name="senha">
                </div>
                <div class="form-group">
                	  <input type="submit" name="submit" class="btn btn-primary form-control" value="Entrar">
                </div>
                <p class="text-center">Não tem uma conta? <a href="usuario/cadastrar.php" class="text-info">Registre-se </a></p> 
             </form>
-                     
-            	      <?php 
-            		if (isset($_SESSION['loginErro'])){ ?>
-            			<div class="text-center alert alert-danger" role="alert">
-            				<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-    							   <span aria-hidden="true">&times;</span>
-  							   </button>
-            		      <?php 
-						         echo $_SESSION['loginErro'];
-            			      unset($_SESSION['loginErro']);}?>	
-            			</div>
+            <script src="validaLogin.js"></script>
          </div>
       </div>
    </div>
