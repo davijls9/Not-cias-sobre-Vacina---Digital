@@ -3,6 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Cartao Vacina Digital</title>
 	<!-- Bootstrap-->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -45,15 +46,15 @@
 				<div class="col-md-4 col-xs-4">
 					<div class="form-group">
 						<label for="data_nascimento" class="text-info">Data de nascimento:</label>
-						<input type="date" name="data_nascimento" id="data_nascimento" class="form-control" placeholder="dd/mm/aaaa" data-mask="00/00/0000" maxlength="10" autocomplete="off">
+						<input type="text" name="data_nascimento" id="data_nascimento" class="form-control" placeholder="dd/mm/aaaa" data-mask="00/00/0000" maxlength="10" autocomplete="off">
 					</div>
 				</div>
 
 
-				<div class="col-md-1 col-xs-1">
+				<div class="col-md-4 col-xs-4">
 					<div class="form-group">
-						<label for="ddd" class="text-info">DDD:</label>
-						<input type="text" name="ddd" id="ddd" class="form-control">
+						<label for="endereco" class="text-info">Endereco:</label>
+						<input type="text" name="ddd" id="endereco" class="form-control">
 					</div>
 				</div>
 				<div class="col-md-4 col-xs-4">
