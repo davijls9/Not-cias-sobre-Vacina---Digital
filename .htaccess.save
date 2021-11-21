@@ -1,0 +1,2 @@
+Header set Access-Control-Allow-Origin "http://localhost"
+Header set Access-Control-Allow-Header "http://localhost"
