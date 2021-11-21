@@ -11,12 +11,13 @@ if((!isset ($_SESSION['login']) == true) and (!isset ($_SESSION['senha']) == tru
 {
   unset($_SESSION['login']);
   unset($_SESSION['senha']);
-  header('location:index.php');
+  //header('location:index.php');
  }
 $logado = $_SESSION['id'];
 $nomeUsuario = $_SESSION['nome'];
 ?>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Cartao Vacina Digital</title>
 	<!-- Bootstrap-->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"

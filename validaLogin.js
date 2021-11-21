@@ -3,10 +3,7 @@
 $('#form_login').on("submit",function(e){
 	e.preventDefault();
 	var email_usuario = $('#email').val();
-	var senha_user = $('#senha').val();
-
-    console.log(CryptoJS.MD5(senha_user));
-    
+	var senha_user = $('#senha').val();    
 
 	if(email_usuario=='' || senha_user==''){
 		alert("Preencha todos os campos");
@@ -23,7 +20,7 @@ $('#form_login').on("submit",function(e){
 			   "senha": senha_user})
             }).done((response)=> {
                 if(response.existeCadastro == true){
-                    window.location.replace("/home.php");
+                    window.location.replace("home.php");
                 }else{
                     alert(response.mensagem);
                 } 
