@@ -1,28 +1,26 @@
-
-
-$('#form_login').on("submit",function(e){
+$('#form_noticia').on("submit",function(e){
 	e.preventDefault();
-	var email_usuario = $('#email').val();
-	var senha_user = $('#senha').val();
+	var titulo = $('#titulo').val();
+	var corpo = $('#corpo').val();    
+    var url = $('#url').val();
 
-    console.log(CryptoJS.MD5(senha_user));
-    
-
-	if(email_usuario=='' || senha_user==''){
+	if(titulo=='' || corpo=='' || url==''){
 		alert("Preencha todos os campos");
 	}else{
         $.ajax({
-            url:"https://api-crud-tecweb.herokuapp.com/validar-usuario",
+            url:"https://api-crud-tecweb.herokuapp.com/criar-noticia",
             headers:{
                 'Content-Type': 'application/json',
                 'Data-Type': "json"			
             },
             type: "POST",
             data: JSON.stringify({
-			   "email": email_usuario,
-			   "senha": senha_user})
+			   "titulo": titulo,
+			   "corpo": corpo,
+               "urlImagem": url})
             }).done((response)=> {
                 if(response.existeCadastro == true){
+                    alert("Noticia Cadastrada com Sucesso!!");
                     window.location.replace("/home.php");
                 }else{
                     alert(response.mensagem);
