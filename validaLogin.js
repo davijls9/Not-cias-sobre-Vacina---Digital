@@ -20,7 +20,13 @@ $('#form_login').on("submit",function(e){
 			   "senha": senha_user})
             }).done((response)=> {
                 if(response.existeCadastro == true){
-                    window.location.replace("home.php");
+                    $.ajax({
+                        url: "validaLogin.php",
+                        data: "valid=true",
+                        type: "POST",
+                    }).done((response)=>{
+                        window.location.replace("home.php");
+                    });
                 }else{
                     alert(response.mensagem);
                 } 
