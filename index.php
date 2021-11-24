@@ -24,7 +24,7 @@
 <body>
    <div class="sidenav">
       <div class="login-main-text ">
-         <h2><b>CARTÃO DE VACINA DIGITAL</b></h2>
+         <h2><b>NOTICIAS SOBRE A VACINA</b></h2>
          <p>Faça login ou registre-se para acessar.</p>
       </div>
    </div>

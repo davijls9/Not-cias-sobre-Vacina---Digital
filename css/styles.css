@@ -35,8 +35,8 @@ body {
   width: 250px;
 }
 #wrapper.toggled-card {
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 #page-content-wrapper {
