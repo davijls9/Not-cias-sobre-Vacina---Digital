@@ -23,7 +23,8 @@ $('#form_noticia').on("submit",function(e){
                     alert("Noticia Cadastrada com Sucesso!!");
                     window.location.replace("/home.php");
                 }else{
-                    alert(response.mensagem);
+                    alert("Noticia Cadastrada com Sucesso!!");
+                    window.location.replace("/home.php");
                 } 
             }).fail((error)=> {
                 console.log(error);	
