@@ -8,6 +8,10 @@
    unset ($_SESSION['senha']);?>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <meta name="google-signin-client_id" content="363938781453-ut8fssda9qgoip6ipato9hh68u1tjcol.apps.googleusercontent.com">
+
+
    <title>Cartao Vacina Digital</title>
    <!-- Bootstrap-->
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -45,11 +49,27 @@
                <div class="form-group">
                	  <input type="submit" name="submit" class="btn btn-primary form-control" value="Entrar">
                </div>
+               <div class="container body-content">
+                  <div class="box-login">
+                     <div id="meu-botao"></div> 
+                     <hr/>                    
+                  </div>
+               </div>   
+
                <p class="text-center">Não tem uma conta? <a href="usuario/cadastrar.php" class="text-info">Registre-se </a></p> 
             </form>
             <script src="validaLogin.js"></script>
          </div>
       </div>
+      <script src="oauth.js"></script>
+
+<!--Google Platform Library-->
+<script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+
+
+</body>
+</html>
+
    </div>
 </body>
 

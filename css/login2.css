@@ -114,6 +114,22 @@
         font-weight: 300;
     }
 
+    .body-content {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .box-login {
+      max-width: 300px;
+      padding: 15px;
+      padding-right: 1000px;
+      margin: 0 auto;
+    }
+    
+    .box-login h2 {
+      text-align: center;
+    }
+
 }
 
 
