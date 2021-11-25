@@ -22,13 +22,6 @@
 </head>
 
 <body>
-   <div class="sidenav">
-      <div class="login-main-text ">
-         <h2><b>NOTICIAS SOBRE A VACINA</b></h2>
-         <p>Faça login ou registre-se para acessar.</p>
-      </div>
-   </div>
-
    <div class="main">
       <div class="col-md-7 col-sm-12">
          <div class="login-form">
