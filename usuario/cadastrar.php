@@ -15,7 +15,12 @@
 </head>
 
 <body>
-
+	<div class="sidenav">
+		<div class="login-main-text ">
+			<h2><b>NOTICIAS SOBRE A VACINA</b></h2>
+			<p>Faça login ou registre-se para acessar.</p>
+		</div>
+	</div>
 	<div class="container-fluid">
 		<h2 class=" titulo-principal">Cadastrar Usuário</h2>
 		<form id="formulario_usuario">
@@ -58,13 +63,14 @@
 						<input type="text" name="telefone" id="telefone" class="form-control">
 					</div>
 				</div>
-				<div class="col-md-4 col-xs-4">
+				</br>
+				<div class="col-md-5 col-xs-5">
 					<div class="form-group">
 						<label for="senha" class="text-info">Senha:</label>
 						<input type="text" name="senha" id="senha" class="form-control">
 					</div>
 				</div>
-				<div class="col-md-4 col-xs-4">
+				<div class="col-md-5 col-xs-5">
 					<div class="form-group">
 						<label for="confirma_senha" class="text-info">Confirmar senha:</label>
 						<input type="text" name="confirma_senha" id="confirma_senha" class="form-control">
